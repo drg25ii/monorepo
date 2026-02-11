@@ -80,11 +80,29 @@ Public port:
 
 Env:
 •⁠  ⁠⁠ PROXY_USERNAME=admin ⁠
-•⁠  ⁠⁠ PROXY_PASSWORD=REPLACE_WITH_PASSWORD ⁠
+•⁠  ⁠⁠ PROXY_PASSWORD=Inter2010⁠
 •⁠  ⁠⁠ PROXY_PORT=5050 ⁠
 •⁠  ⁠⁠ PROXY_HOST=REPLACE_WITH_PUBLIC_DOMAIN_OR_IP ⁠
 
 ---
+
+## Mediaflow-proxy
+
+### Image
+⁠ mhdzumair/mediaflow-proxy:latest ⁠
+
+### Northflank
+Create service → Deployment → Deploy a Docker image
+
+*Ports*
+•⁠  ⁠Port: ⁠ 8888 ⁠
+•⁠  ⁠Protocol: ⁠ HTTP ⁠
+•⁠  ⁠Public: ⁠ true ⁠
+•⁠  ⁠Port name: ⁠ http ⁠
+
+*Runtime variables*
+•⁠  ⁠⁠ API_PASSWORD=Inter2010⁠
+
 
 ## Notițe
 •⁠  ⁠Public ports pe Northflank trebuie să fie HTTP/HTTP2 (nu TCP) ca să primești domeniu + TLS.
